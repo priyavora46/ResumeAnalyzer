@@ -10,7 +10,7 @@ namespace ResumeAnalyzer.Controllers
         private ApplicationDbContext db = new ApplicationDbContext();
 
         // Secret key - change this to something only you know!
-        private const string SECRET_KEY = "mySecretKey2025";
+        private const string SECRET_KEY = "YOUR_SECRET_KEY";
 
         // Check secret key for all actions
         protected override void OnActionExecuting(ActionExecutingContext filterContext)
