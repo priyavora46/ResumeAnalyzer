@@ -1,0 +1,107 @@
+﻿@{
+    ViewBag.Title = "About";
+}
+
+<div class="row">
+    <div class="col-md-12">
+        <h2><span class="glyphicon glyphicon-info-sign"></span> About Resume Analyzer</h2>
+        <hr />
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-md-8">
+        <div class="panel panel-primary">
+            <div class="panel-heading">
+                <h3 class="panel-title">What is Resume Analyzer?</h3>
+            </div>
+            <div class="panel-body">
+                <p class="lead">Resume Analyzer is an AI-powered tool that helps job seekers optimize their resumes for better results in their job search.</p>
+
+                <h4>Key Features:</h4>
+                <ul>
+                    <li><strong>AI-Powered Analysis:</strong> Uses Google's Gemini AI to provide intelligent insights</li>
+                    <li><strong>Comprehensive Scoring:</strong> Evaluates your resume across multiple categories</li>
+                    <li><strong>ATS Compatibility Check:</strong> Ensures your resume passes Applicant Tracking Systems</li>
+                    <li><strong>Job Match Analysis:</strong> Compares your skills against job requirements</li>
+                    <li><strong>Keyword Optimization:</strong> Identifies missing keywords to improve your chances</li>
+                    <li><strong>Actionable Recommendations:</strong> Provides specific tips to improve your resume</li>
+                </ul>
+
+                <h4>How It Works:</h4>
+                <ol>
+                    <li>Upload your resume in PDF, DOCX, or TXT format</li>
+                    <li>Optionally add a job description and target position</li>
+                    <li>Our AI analyzes your resume comprehensively</li>
+                    <li>Receive detailed feedback with scores and recommendations</li>
+                </ol>
+            </div>
+        </div>
+
+        <div class="panel panel-info">
+            <div class="panel-heading">
+                <h3 class="panel-title">Technology Stack</h3>
+            </div>
+            <div class="panel-body">
+                <div class="row">
+                    <div class="col-md-6">
+                        <h5>Frontend:</h5>
+                        <ul>
+                            <li>ASP.NET MVC 5</li>
+                            <li>Bootstrap 3</li>
+                            <li>jQuery</li>
+                        </ul>
+                    </div>
+                    <div class="col-md-6">
+                        <h5>Backend:</h5>
+                        <ul>
+                            <li>C# .NET Framework</li>
+                            <li>Google Gemini AI API</li>
+                            <li>PDF & DOCX Processing</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-4">
+        <div class="panel panel-success">
+            <div class="panel-heading">
+                <h3 class="panel-title">Why Use Resume Analyzer?</h3>
+            </div>
+            <div class="panel-body">
+                <h5><span class="glyphicon glyphicon-ok-circle"></span> Save Time</h5>
+                <p>Get instant feedback instead of waiting for responses</p>
+
+                <h5><span class="glyphicon glyphicon-ok-circle"></span> Improve Quality</h5>
+                <p>Identify weaknesses and get specific improvement tips</p>
+
+                <h5><span class="glyphicon glyphicon-ok-circle"></span> Increase Success Rate</h5>
+                <p>Optimize for ATS systems and job requirements</p>
+
+                <h5><span class="glyphicon glyphicon-ok-circle"></span> Free to Use</h5>
+                <p>No hidden costs or subscription required</p>
+            </div>
+        </div>
+
+        <div class="panel panel-warning">
+            <div class="panel-heading">
+                <h3 class="panel-title">Privacy & Security</h3>
+            </div>
+            <div class="panel-body">
+                <p><span class="glyphicon glyphicon-lock"></span> Your resume is processed securely</p>
+                <p><span class="glyphicon glyphicon-trash"></span> Files are not stored permanently</p>
+                <p><span class="glyphicon glyphicon-eye-close"></span> Your data remains private</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-md-12 text-center" style="margin-top: 30px;">
+        <a href="@Url.Action("Upload", "Resume")" class="btn btn-primary btn-lg">
+            <span class="glyphicon glyphicon-upload"></span> Try Resume Analyzer Now
+        </a>
+    </div>
+</div>

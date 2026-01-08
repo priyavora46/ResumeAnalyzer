@@ -1,0 +1,387 @@
+﻿@model ResumeAnalyzer.Models.AnalysisResultViewModel
+
+@{
+    ViewBag.Title = "Resume Analysis Results";
+    string scoreColor = Model.OverallScore >= 80 ? "success" : Model.OverallScore >= 60 ? "warning" : "danger";
+}
+
+<div class="row">
+    <div class="col-md-12">
+        <h2>
+            <span class="glyphicon glyphicon-file"></span> Resume Analysis Results
+        </h2>
+        <p class="text-muted">File: <strong>@Model.FileName</strong></p>
+        <hr />
+    </div>
+</div>
+
+<!-- Overall Score -->
+<div class="row">
+    <div class="col-md-12">
+        <div class="panel panel-@scoreColor">
+            <div class="panel-heading">
+                <h3 class="panel-title">Overall Score</h3>
+            </div>
+            <div class="panel-body text-center">
+                <h1 style="font-size: 72px; margin: 20px 0;">
+                    <strong>@Model.OverallScore</strong><span style="font-size: 36px;">/100</span>
+                </h1>
+                <div class="progress" style="height: 30px;">
+                    <div class="progress-bar progress-bar-@scoreColor" role="progressbar"
+                         style="width: @Model.OverallScore%;" aria-valuenow="@Model.OverallScore" aria-valuemin="0" aria-valuemax="100">
+                        @Model.OverallScore%
+                    </div>
+                </div>
+                @if (!string.IsNullOrEmpty(Model.Summary))
+                {
+                    <p class="lead" style="margin-top: 20px;">@Model.Summary</p>
+                }
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- JOB MATCH SECTION - NEW -->
+@if (Model.JobMatchScore > 0)
+{
+    string jobMatchColor = Model.JobMatchScore >= 80 ? "success" : Model.JobMatchScore >= 60 ? "info" : Model.JobMatchScore >= 40 ? "warning" : "danger";
+    <div class="row">
+        <div class="col-md-12">
+            <div class="panel panel-@jobMatchColor">
+                <div class="panel-heading">
+                    <h3 class="panel-title"><span class="glyphicon glyphicon-bullseye"></span> Job Match Analysis</h3>
+                </div>
+                <div class="panel-body">
+                    <div class="text-center" style="margin-bottom: 20px;">
+                        <h2 style="font-size: 48px; margin: 10px 0;">
+                            <strong>@Model.JobMatchScore%</strong>
+                        </h2>
+                        <div class="progress" style="height: 25px;">
+                            <div class="progress-bar progress-bar-@jobMatchColor" role="progressbar"
+                                 style="width: @Model.JobMatchScore%;">
+                                @Model.JobMatchScore%
+                            </div>
+                        </div>
+
+                        @if (Model.JobMatchScore >= 80)
+                        {
+                            <div class="alert alert-success" style="margin-top: 15px;">
+                                <strong><span class="glyphicon glyphicon-star"></span> Excellent Match!</strong> You're highly qualified for this role.
+                            </div>
+                        }
+                        else if (Model.JobMatchScore >= 60)
+                        {
+                            <div class="alert alert-info" style="margin-top: 15px;">
+                                <strong><span class="glyphicon glyphicon-ok"></span> Good Match!</strong> You meet most requirements.
+                            </div>
+                        }
+                        else if (Model.JobMatchScore >= 40)
+                        {
+                            <div class="alert alert-warning" style="margin-top: 15px;">
+                                <strong><span class="glyphicon glyphicon-info-sign"></span> Moderate Match.</strong> Consider developing some skills.
+                            </div>
+                        }
+                        else
+                        {
+                            <div class="alert alert-danger" style="margin-top: 15px;">
+                                <strong><span class="glyphicon glyphicon-remove"></span> Limited Match.</strong> Significant skill development needed.
+                            </div>
+                        }
+                    </div>
+
+                    <div class="row">
+                        @if (Model.MatchingSkills != null && Model.MatchingSkills.Count > 0)
+                        {
+                            <div class="col-md-6">
+                                <h4><span class="glyphicon glyphicon-ok-circle text-success"></span> Your Matching Skills</h4>
+                                <ul class="list-group">
+                                    @foreach (var skill in Model.MatchingSkills)
+                                    {
+                                        <li class="list-group-item list-group-item-success">
+                                            <span class="glyphicon glyphicon-check"></span> @skill
+                                        </li>
+                                    }
+                                </ul>
+                            </div>
+                        }
+
+                        @if (Model.MissingSkills != null && Model.MissingSkills.Count > 0)
+                        {
+                            <div class="col-md-6">
+                                <h4><span class="glyphicon glyphicon-education text-warning"></span> Skills to Develop</h4>
+                                <ul class="list-group">
+                                    @foreach (var skill in Model.MissingSkills)
+                                    {
+                                        <li class="list-group-item list-group-item-warning">
+                                            <span class="glyphicon glyphicon-arrow-right"></span> @skill
+                                        </li>
+                                    }
+                                </ul>
+                            </div>
+                        }
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+}
+
+<!-- Category Scores -->
+@if (Model.CategoryScores != null && Model.CategoryScores.Count > 0)
+{
+    <div class="row">
+        <div class="col-md-12">
+            <div class="panel panel-info">
+                <div class="panel-heading">
+                    <h3 class="panel-title"><span class="glyphicon glyphicon-stats"></span> Category Scores</h3>
+                </div>
+                <div class="panel-body">
+                    @foreach (var category in Model.CategoryScores)
+                    {
+                        string categoryColor = category.Value >= 80 ? "success" : category.Value >= 60 ? "info" : "warning";
+                        <div style="margin-bottom: 15px;">
+                            <div style="display: flex; justify-content: space-between; margin-bottom: 5px;">
+                                <strong>@category.Key</strong>
+                                <span class="label label-@categoryColor">@category.Value%</span>
+                            </div>
+                            <div class="progress">
+                                <div class="progress-bar progress-bar-@categoryColor" role="progressbar"
+                                     style="width: @category.Value%;" aria-valuenow="@category.Value">
+                                </div>
+                            </div>
+                        </div>
+                    }
+                </div>
+            </div>
+        </div>
+    </div>
+}
+
+<!-- Two Column Layout -->
+<div class="row">
+    <!-- Left Column -->
+    <div class="col-md-6">
+        <!-- Strengths -->
+        @if (Model.Strengths != null && Model.Strengths.Count > 0)
+        {
+            <div class="panel panel-success">
+                <div class="panel-heading">
+                    <h3 class="panel-title"><span class="glyphicon glyphicon-thumbs-up"></span> Strengths</h3>
+                </div>
+                <div class="panel-body">
+                    <ul>
+                        @foreach (var strength in Model.Strengths)
+                        {
+                            <li>@strength</li>
+                        }
+                    </ul>
+                </div>
+            </div>
+        }
+
+        <!-- Skills -->
+        @if (Model.Skills != null && Model.Skills.Count > 0)
+        {
+            <div class="panel panel-primary">
+                <div class="panel-heading">
+                    <h3 class="panel-title"><span class="glyphicon glyphicon-wrench"></span> Identified Skills</h3>
+                </div>
+                <div class="panel-body">
+                    @foreach (var skill in Model.Skills)
+                    {
+                        string badgeClass = skill.Category == "Technical" ? "primary" : "info";
+                        <span class="label label-@badgeClass" style="margin: 3px; padding: 5px 10px; font-size: 13px;">
+                            @skill.Name
+                            @if (!string.IsNullOrEmpty(skill.Proficiency))
+                            {
+                                <span> - @skill.Proficiency</span>
+                            }
+                        </span>
+                    }
+                </div>
+            </div>
+        }
+
+        <!-- Contact Info -->
+        @if (Model.Contact != null && !string.IsNullOrEmpty(Model.Contact.Email))
+        {
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h3 class="panel-title"><span class="glyphicon glyphicon-envelope"></span> Contact Information</h3>
+                </div>
+                <div class="panel-body">
+                    @if (!string.IsNullOrEmpty(Model.Contact.Email))
+                    {
+                        <p><strong>Email:</strong> @Model.Contact.Email</p>
+                    }
+                    @if (!string.IsNullOrEmpty(Model.Contact.Phone))
+                    {
+                        <p><strong>Phone:</strong> @Model.Contact.Phone</p>
+                    }
+                    @if (!string.IsNullOrEmpty(Model.Contact.LinkedIn))
+                    {
+                        <p><strong>LinkedIn:</strong> @Model.Contact.LinkedIn</p>
+                    }
+                    @if (!string.IsNullOrEmpty(Model.Contact.Location))
+                    {
+                        <p><strong>Location:</strong> @Model.Contact.Location</p>
+                    }
+                </div>
+            </div>
+        }
+    </div>
+
+    <!-- Right Column -->
+    <div class="col-md-6">
+        <!-- Weaknesses -->
+        @if (Model.Weaknesses != null && Model.Weaknesses.Count > 0)
+        {
+            <div class="panel panel-warning">
+                <div class="panel-heading">
+                    <h3 class="panel-title"><span class="glyphicon glyphicon-exclamation-sign"></span> Areas for Improvement</h3>
+                </div>
+                <div class="panel-body">
+                    <ul>
+                        @foreach (var weakness in Model.Weaknesses)
+                        {
+                            <li>@weakness</li>
+                        }
+                    </ul>
+                </div>
+            </div>
+        }
+
+        <!-- Recommendations -->
+        @if (Model.Recommendations != null && Model.Recommendations.Count > 0)
+        {
+            <div class="panel panel-info">
+                <div class="panel-heading">
+                    <h3 class="panel-title"><span class="glyphicon glyphicon-lightbulb"></span> Recommendations</h3>
+                </div>
+                <div class="panel-body">
+                    <ol>
+                        @foreach (var recommendation in Model.Recommendations)
+                        {
+                            <li>@recommendation</li>
+                        }
+                    </ol>
+                </div>
+            </div>
+        }
+
+        <!-- Missing Keywords -->
+        @if (Model.MissingKeywords != null && Model.MissingKeywords.Count > 0)
+        {
+            <div class="panel panel-danger">
+                <div class="panel-heading">
+                    <h3 class="panel-title"><span class="glyphicon glyphicon-alert"></span> Missing Keywords</h3>
+                </div>
+                <div class="panel-body">
+                    @foreach (var keyword in Model.MissingKeywords)
+                    {
+                        <span class="label label-danger" style="margin: 3px; padding: 5px 10px; font-size: 13px;">
+                            @keyword
+                        </span>
+                    }
+                    <p class="text-muted" style="margin-top: 10px;">
+                        <small>Consider adding these keywords from the job description to improve your match.</small>
+                    </p>
+                </div>
+            </div>
+        }
+    </div>
+</div>
+
+<!-- ATS Compatibility -->
+@if (!string.IsNullOrEmpty(Model.ATSCompatibility))
+{
+    <div class="row">
+        <div class="col-md-12">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h3 class="panel-title"><span class="glyphicon glyphicon-check"></span> ATS Compatibility</h3>
+                </div>
+                <div class="panel-body">
+                    <p>@Model.ATSCompatibility</p>
+                    @if (Model.KeywordMatchPercentage > 0)
+                    {
+                        <p><strong>Keyword Match:</strong> @Model.KeywordMatchPercentage%</p>
+                        <div class="progress">
+                            <div class="progress-bar progress-bar-info" role="progressbar"
+                                 style="width: @Model.KeywordMatchPercentage%;">
+                                @Model.KeywordMatchPercentage%
+                            </div>
+                        </div>
+                    }
+                </div>
+            </div>
+        </div>
+    </div>
+}
+
+<!-- Education & Experience -->
+<div class="row">
+    @if (Model.Education != null && Model.Education.Count > 0)
+    {
+        <div class="col-md-6">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h3 class="panel-title"><span class="glyphicon glyphicon-education"></span> Education</h3>
+                </div>
+                <div class="panel-body">
+                    <ul>
+                        @foreach (var edu in Model.Education)
+                        {
+                            <li>@edu</li>
+                        }
+                    </ul>
+                </div>
+            </div>
+        </div>
+    }
+
+    @if (Model.Experience != null && Model.Experience.Count > 0)
+    {
+        <div class="col-md-6">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h3 class="panel-title"><span class="glyphicon glyphicon-briefcase"></span> Experience Highlights</h3>
+                </div>
+                <div class="panel-body">
+                    <ul>
+                        @foreach (var exp in Model.Experience.Take(5))
+                        {
+                            <li>@exp</li>
+                        }
+                    </ul>
+                </div>
+            </div>
+        </div>
+    }
+</div>
+
+<!-- Action Buttons -->
+<div class="row">
+    <div class="col-md-12 text-center" style="margin: 30px 0;">
+        <a href="@Url.Action("Upload", "Resume")" class="btn btn-primary btn-lg">
+            <span class="glyphicon glyphicon-upload"></span> Analyze Another Resume
+        </a>
+        <button onclick="window.print()" class="btn btn-default btn-lg">
+            <span class="glyphicon glyphicon-print"></span> Print Report
+        </button>
+    </div>
+</div>
+
+@section Scripts {
+    <style>
+        @@media print {
+            .btn, nav, footer {
+                display: none;
+            }
+
+            .panel {
+                page-break-inside: avoid;
+            }
+        }
+    </style>
+}

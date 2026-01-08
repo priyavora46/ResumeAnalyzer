@@ -1,0 +1,152 @@
+﻿@model ResumeAnalyzer.Models.ContactMessage
+
+@{
+    ViewBag.Title = "Contact";
+}
+
+<div class="row">
+    <div class="col-md-12">
+        <h2><span class="glyphicon glyphicon-envelope"></span> Contact Us</h2>
+        <hr />
+    </div>
+</div>
+
+@* Success Message *@
+@if (TempData["Success"] != null)
+{
+    <div class="alert alert-success alert-dismissible" role="alert">
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+        </button>
+        <span class="glyphicon glyphicon-ok"></span> @TempData["Success"]
+    </div>
+}
+
+@* Error Message *@
+@if (ViewBag.Error != null)
+{
+    <div class="alert alert-danger alert-dismissible" role="alert">
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+        </button>
+        <span class="glyphicon glyphicon-exclamation-sign"></span> @ViewBag.Error
+    </div>
+}
+
+<div class="row">
+    <div class="col-md-8">
+        <div class="panel panel-primary">
+            <div class="panel-heading">
+                <h3 class="panel-title">Get in Touch</h3>
+            </div>
+            <div class="panel-body">
+                <p class="lead">Have questions, feedback, or need support? We'd love to hear from you!</p>
+
+                @using (Html.BeginForm("Index", "Contact", FormMethod.Post, new { @class = "form-horizontal" }))
+                {
+                    @Html.AntiForgeryToken()
+                    @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+
+                    <div class="form-group">
+                        @Html.LabelFor(m => m.Name, "Your Name", new { @class = "col-md-3 control-label" })
+                        <div class="col-md-9">
+                            @Html.TextBoxFor(m => m.Name, new { @class = "form-control", placeholder = "Enter your full name", required = "required" })
+                            @Html.ValidationMessageFor(m => m.Name, "", new { @class = "text-danger" })
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        @Html.LabelFor(m => m.Email, "Email Address", new { @class = "col-md-3 control-label" })
+                        <div class="col-md-9">
+                            @Html.TextBoxFor(m => m.Email, new { @class = "form-control", placeholder = "your.email@example.com", type = "email", required = "required" })
+                            @Html.ValidationMessageFor(m => m.Email, "", new { @class = "text-danger" })
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        @Html.LabelFor(m => m.Subject, "Subject", new { @class = "col-md-3 control-label" })
+                        <div class="col-md-9">
+                            @Html.DropDownListFor(m => m.Subject, new SelectList(new[]
+                            {
+                                "General Inquiry",
+                                "Technical Support",
+                                "Feature Request",
+                                "Bug Report",
+                                "Other"
+                            }), new { @class = "form-control" })
+                            @Html.ValidationMessageFor(m => m.Subject, "", new { @class = "text-danger" })
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        @Html.LabelFor(m => m.Message, "Message", new { @class = "col-md-3 control-label" })
+                        <div class="col-md-9">
+                            @Html.TextAreaFor(m => m.Message, 6, 0, new { @class = "form-control", placeholder = "Enter your message here...", required = "required" })
+                            @Html.ValidationMessageFor(m => m.Message, "", new { @class = "text-danger" })
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <div class="col-md-offset-3 col-md-9">
+                            <button type="submit" class="btn btn-primary btn-lg">
+                                <span class="glyphicon glyphicon-send"></span> Send Message
+                            </button>
+                        </div>
+                    </div>
+                }
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-4">
+        <div class="panel panel-info">
+            <div class="panel-heading">
+                <h3 class="panel-title">Contact Information</h3>
+            </div>
+            <div class="panel-body">
+                <h5><span class="glyphicon glyphicon-envelope"></span> Email</h5>
+                <p><a href="mailto:priyavora69@gmail.com">priyavora69@gmail.com</a></p>
+
+                <h5><span class="glyphicon glyphicon-time"></span> Response Time</h5>
+                <p>We typically respond within 24-48 hours</p>
+
+                <h5><span class="glyphicon glyphicon-globe"></span> Website</h5>
+                <p>www.resumeanalyzer.com</p>
+            </div>
+        </div>
+
+        <div class="panel panel-success">
+            <div class="panel-heading">
+                <h3 class="panel-title">FAQ</h3>
+            </div>
+            <div class="panel-body">
+                <h5>What file formats are supported?</h5>
+                <p>PDF, DOCX, and TXT files up to 10MB</p>
+
+                <h5>Is my data secure?</h5>
+                <p>Yes, we don't store your resume permanently</p>
+
+                <h5>How accurate is the AI?</h5>
+                <p>Our AI uses Google's Gemini for high-quality analysis</p>
+
+                <h5>Is it free?</h5>
+                <p>Yes, completely free to use</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}
+
+<style>
+    .alert {
+        margin-bottom: 20px;
+    }
+
+    .form-control:focus {
+        border-color: #66afe9;
+        box-shadow: 0 0 8px rgba(102, 175, 233, 0.6);
+    }
+</style>

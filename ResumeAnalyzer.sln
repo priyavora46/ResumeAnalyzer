@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.14.36623.8 d17.14
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ResumeAnalyzer", "ResumeAnalyzer\ResumeAnalyzer.csproj", "{BE9BC979-D4D4-4180-8AA3-03D1B4630A1E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BE9BC979-D4D4-4180-8AA3-03D1B4630A1E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BE9BC979-D4D4-4180-8AA3-03D1B4630A1E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BE9BC979-D4D4-4180-8AA3-03D1B4630A1E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BE9BC979-D4D4-4180-8AA3-03D1B4630A1E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {F25C9CDD-2A65-4BE8-9B77-60A6F161FAE5}
+	EndGlobalSection
+EndGlobal

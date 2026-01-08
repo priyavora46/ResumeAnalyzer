@@ -1,0 +1,326 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\sem 5\\ResumeAnalyzer\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{BE9BC979-D4D4-4180-8AA3-03D1B4630A1E}|ResumeAnalyzer\\ResumeAnalyzer.csproj|d:\\sem 5\\resumeanalyzer\\resumeanalyzer\\views\\admin\\viewmessage.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{BE9BC979-D4D4-4180-8AA3-03D1B4630A1E}|ResumeAnalyzer\\ResumeAnalyzer.csproj|solutionrelative:resumeanalyzer\\views\\admin\\viewmessage.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BE9BC979-D4D4-4180-8AA3-03D1B4630A1E}|ResumeAnalyzer\\ResumeAnalyzer.csproj|D:\\sem 5\\ResumeAnalyzer\\resumeanalyzer\\views\\admin\\contactmessages.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{BE9BC979-D4D4-4180-8AA3-03D1B4630A1E}|ResumeAnalyzer\\ResumeAnalyzer.csproj|solutionrelative:resumeanalyzer\\views\\admin\\contactmessages.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BE9BC979-D4D4-4180-8AA3-03D1B4630A1E}|ResumeAnalyzer\\ResumeAnalyzer.csproj|D:\\sem 5\\ResumeAnalyzer\\resumeanalyzer\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BE9BC979-D4D4-4180-8AA3-03D1B4630A1E}|ResumeAnalyzer\\ResumeAnalyzer.csproj|solutionrelative:resumeanalyzer\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BE9BC979-D4D4-4180-8AA3-03D1B4630A1E}|ResumeAnalyzer\\ResumeAnalyzer.csproj|D:\\sem 5\\ResumeAnalyzer\\resumeanalyzer\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{BE9BC979-D4D4-4180-8AA3-03D1B4630A1E}|ResumeAnalyzer\\ResumeAnalyzer.csproj|solutionrelative:resumeanalyzer\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BE9BC979-D4D4-4180-8AA3-03D1B4630A1E}|ResumeAnalyzer\\ResumeAnalyzer.csproj|D:\\sem 5\\ResumeAnalyzer\\resumeanalyzer\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BE9BC979-D4D4-4180-8AA3-03D1B4630A1E}|ResumeAnalyzer\\ResumeAnalyzer.csproj|solutionrelative:resumeanalyzer\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BE9BC979-D4D4-4180-8AA3-03D1B4630A1E}|ResumeAnalyzer\\ResumeAnalyzer.csproj|D:\\sem 5\\ResumeAnalyzer\\resumeanalyzer\\controllers\\contactcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BE9BC979-D4D4-4180-8AA3-03D1B4630A1E}|ResumeAnalyzer\\ResumeAnalyzer.csproj|solutionrelative:resumeanalyzer\\controllers\\contactcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BE9BC979-D4D4-4180-8AA3-03D1B4630A1E}|ResumeAnalyzer\\ResumeAnalyzer.csproj|D:\\sem 5\\ResumeAnalyzer\\resumeanalyzer\\views\\contact\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{BE9BC979-D4D4-4180-8AA3-03D1B4630A1E}|ResumeAnalyzer\\ResumeAnalyzer.csproj|solutionrelative:resumeanalyzer\\views\\contact\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BE9BC979-D4D4-4180-8AA3-03D1B4630A1E}|ResumeAnalyzer\\ResumeAnalyzer.csproj|D:\\sem 5\\ResumeAnalyzer\\resumeanalyzer\\views\\home\\contact.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{BE9BC979-D4D4-4180-8AA3-03D1B4630A1E}|ResumeAnalyzer\\ResumeAnalyzer.csproj|solutionrelative:resumeanalyzer\\views\\home\\contact.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BE9BC979-D4D4-4180-8AA3-03D1B4630A1E}|ResumeAnalyzer\\ResumeAnalyzer.csproj|D:\\sem 5\\ResumeAnalyzer\\resumeanalyzer\\models\\contactmessage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BE9BC979-D4D4-4180-8AA3-03D1B4630A1E}|ResumeAnalyzer\\ResumeAnalyzer.csproj|solutionrelative:resumeanalyzer\\models\\contactmessage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BE9BC979-D4D4-4180-8AA3-03D1B4630A1E}|ResumeAnalyzer\\ResumeAnalyzer.csproj|D:\\sem 5\\ResumeAnalyzer\\resumeanalyzer\\services\\fileprocessingservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BE9BC979-D4D4-4180-8AA3-03D1B4630A1E}|ResumeAnalyzer\\ResumeAnalyzer.csproj|solutionrelative:resumeanalyzer\\services\\fileprocessingservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/ResumeAnalyzerDB/True/SqlTable/dbo.ContactMessages.sql||{0058A1F7-65F3-4DB9-B3D0-CA7E64DD73CD}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BE9BC979-D4D4-4180-8AA3-03D1B4630A1E}|ResumeAnalyzer\\ResumeAnalyzer.csproj|D:\\sem 5\\ResumeAnalyzer\\resumeanalyzer\\services\\geminiapiservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BE9BC979-D4D4-4180-8AA3-03D1B4630A1E}|ResumeAnalyzer\\ResumeAnalyzer.csproj|solutionrelative:resumeanalyzer\\services\\geminiapiservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BE9BC979-D4D4-4180-8AA3-03D1B4630A1E}|ResumeAnalyzer\\ResumeAnalyzer.csproj|D:\\sem 5\\ResumeAnalyzer\\resumeanalyzer\\controllers\\resumecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BE9BC979-D4D4-4180-8AA3-03D1B4630A1E}|ResumeAnalyzer\\ResumeAnalyzer.csproj|solutionrelative:resumeanalyzer\\controllers\\resumecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BE9BC979-D4D4-4180-8AA3-03D1B4630A1E}|ResumeAnalyzer\\ResumeAnalyzer.csproj|D:\\sem 5\\ResumeAnalyzer\\resumeanalyzer\\content\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{BE9BC979-D4D4-4180-8AA3-03D1B4630A1E}|ResumeAnalyzer\\ResumeAnalyzer.csproj|solutionrelative:resumeanalyzer\\content\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BE9BC979-D4D4-4180-8AA3-03D1B4630A1E}|ResumeAnalyzer\\ResumeAnalyzer.csproj|D:\\sem 5\\ResumeAnalyzer\\resumeanalyzer\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{BE9BC979-D4D4-4180-8AA3-03D1B4630A1E}|ResumeAnalyzer\\ResumeAnalyzer.csproj|solutionrelative:resumeanalyzer\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BE9BC979-D4D4-4180-8AA3-03D1B4630A1E}|ResumeAnalyzer\\ResumeAnalyzer.csproj|D:\\sem 5\\ResumeAnalyzer\\resumeanalyzer\\models\\analysisresultviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BE9BC979-D4D4-4180-8AA3-03D1B4630A1E}|ResumeAnalyzer\\ResumeAnalyzer.csproj|solutionrelative:resumeanalyzer\\models\\analysisresultviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BE9BC979-D4D4-4180-8AA3-03D1B4630A1E}|ResumeAnalyzer\\ResumeAnalyzer.csproj|D:\\sem 5\\ResumeAnalyzer\\resumeanalyzer\\services\\geminimodelhelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BE9BC979-D4D4-4180-8AA3-03D1B4630A1E}|ResumeAnalyzer\\ResumeAnalyzer.csproj|solutionrelative:resumeanalyzer\\services\\geminimodelhelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{00000000-0000-0000-0000-000000000000}|\u003CSolution\u003E|ResumeAnalyzer||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\sem 5\\ResumeAnalyzer\\SQLQuery1.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}|",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:SQLQuery1.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}|"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 1,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedHeight": 200,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:1745501676:0:{83107a3e-496a-485e-b455-16ddb978e55e}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "D:\\sem 5\\ResumeAnalyzer\\ResumeAnalyzer\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "ResumeAnalyzer\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "D:\\sem 5\\ResumeAnalyzer\\ResumeAnalyzer\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "ResumeAnalyzer\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAQwB0AAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-01-08T03:48:07.871Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ViewMessage.cshtml",
+              "DocumentMoniker": "D:\\sem 5\\ResumeAnalyzer\\ResumeAnalyzer\\Views\\Admin\\ViewMessage.cshtml",
+              "RelativeDocumentMoniker": "ResumeAnalyzer\\Views\\Admin\\ViewMessage.cshtml",
+              "ToolTip": "D:\\sem 5\\ResumeAnalyzer\\ResumeAnalyzer\\Views\\Admin\\ViewMessage.cshtml",
+              "RelativeToolTip": "ResumeAnalyzer\\Views\\Admin\\ViewMessage.cshtml",
+              "ViewState": "AgIAAFQAAAAAAAAAAAAkwGMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-01-08T03:34:45.337Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ContactMessages.cshtml",
+              "DocumentMoniker": "D:\\sem 5\\ResumeAnalyzer\\ResumeAnalyzer\\Views\\Admin\\ContactMessages.cshtml",
+              "RelativeDocumentMoniker": "ResumeAnalyzer\\Views\\Admin\\ContactMessages.cshtml",
+              "ToolTip": "D:\\sem 5\\ResumeAnalyzer\\ResumeAnalyzer\\Views\\Admin\\ContactMessages.cshtml",
+              "RelativeToolTip": "ResumeAnalyzer\\Views\\Admin\\ContactMessages.cshtml",
+              "ViewState": "AgIAAFAAAAAAAAAAAAAQwHMAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-01-08T03:33:50.187Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "AdminController.cs",
+              "DocumentMoniker": "D:\\sem 5\\ResumeAnalyzer\\ResumeAnalyzer\\Controllers\\AdminController.cs",
+              "RelativeDocumentMoniker": "ResumeAnalyzer\\Controllers\\AdminController.cs",
+              "ToolTip": "D:\\sem 5\\ResumeAnalyzer\\ResumeAnalyzer\\Controllers\\AdminController.cs",
+              "RelativeToolTip": "ResumeAnalyzer\\Controllers\\AdminController.cs",
+              "ViewState": "AgIAAEkAAAAAAAAAAAA4wGsAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-08T03:32:48.505Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "D:\\sem 5\\ResumeAnalyzer\\ResumeAnalyzer\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "ResumeAnalyzer\\Controllers\\HomeController.cs",
+              "ToolTip": "D:\\sem 5\\ResumeAnalyzer\\ResumeAnalyzer\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "ResumeAnalyzer\\Controllers\\HomeController.cs",
+              "ViewState": "AgIAAB4AAAAAAAAAAAAUwD4AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-08T03:24:18.408Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\sem 5\\ResumeAnalyzer\\ResumeAnalyzer\\Views\\Contact\\Index.cshtml",
+              "RelativeDocumentMoniker": "ResumeAnalyzer\\Views\\Contact\\Index.cshtml",
+              "ToolTip": "D:\\sem 5\\ResumeAnalyzer\\ResumeAnalyzer\\Views\\Contact\\Index.cshtml",
+              "RelativeToolTip": "ResumeAnalyzer\\Views\\Contact\\Index.cshtml",
+              "ViewState": "AgIAAHIAAAAAAAAAAAAwwJcAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-01-08T03:23:42.982Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "ContactMessage.cs",
+              "DocumentMoniker": "D:\\sem 5\\ResumeAnalyzer\\ResumeAnalyzer\\Models\\ContactMessage.cs",
+              "RelativeDocumentMoniker": "ResumeAnalyzer\\Models\\ContactMessage.cs",
+              "ToolTip": "D:\\sem 5\\ResumeAnalyzer\\ResumeAnalyzer\\Models\\ContactMessage.cs",
+              "RelativeToolTip": "ResumeAnalyzer\\Models\\ContactMessage.cs",
+              "ViewState": "AgIAABoAAAAAAAAAAAAAAB8AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-08T03:17:17.284Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Contact.cshtml",
+              "DocumentMoniker": "D:\\sem 5\\ResumeAnalyzer\\ResumeAnalyzer\\Views\\Home\\Contact.cshtml",
+              "RelativeDocumentMoniker": "ResumeAnalyzer\\Views\\Home\\Contact.cshtml",
+              "ToolTip": "D:\\sem 5\\ResumeAnalyzer\\ResumeAnalyzer\\Views\\Home\\Contact.cshtml",
+              "RelativeToolTip": "ResumeAnalyzer\\Views\\Home\\Contact.cshtml",
+              "ViewState": "AgIAAHIAAAAAAAAAAAAwwJcAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-01-08T03:16:37.875Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "ContactController.cs",
+              "DocumentMoniker": "D:\\sem 5\\ResumeAnalyzer\\ResumeAnalyzer\\Controllers\\ContactController.cs",
+              "RelativeDocumentMoniker": "ResumeAnalyzer\\Controllers\\ContactController.cs",
+              "ToolTip": "D:\\sem 5\\ResumeAnalyzer\\ResumeAnalyzer\\Controllers\\ContactController.cs",
+              "RelativeToolTip": "ResumeAnalyzer\\Controllers\\ContactController.cs",
+              "ViewState": "AgIAABMAAAAAAAAAAAAUwDMAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-08T03:10:37.093Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "dbo.ContactMessages.sql",
+              "DocumentMoniker": "ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/ResumeAnalyzerDB/True/SqlTable/dbo.ContactMessages.sql",
+              "ToolTip": "ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/ResumeAnalyzerDB/True/SqlTable/dbo.ContactMessages.sql",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
+              "WhenOpened": "2026-01-08T03:09:56.641Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "FileProcessingService.cs",
+              "DocumentMoniker": "D:\\sem 5\\ResumeAnalyzer\\ResumeAnalyzer\\Services\\FileProcessingService.cs",
+              "RelativeDocumentMoniker": "ResumeAnalyzer\\Services\\FileProcessingService.cs",
+              "ToolTip": "D:\\sem 5\\ResumeAnalyzer\\ResumeAnalyzer\\Services\\FileProcessingService.cs",
+              "RelativeToolTip": "ResumeAnalyzer\\Services\\FileProcessingService.cs",
+              "ViewState": "AgIAAKYAAAAAAAAAAAAcwLQAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-07T20:38:12.446Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "ResumeController.cs",
+              "DocumentMoniker": "D:\\sem 5\\ResumeAnalyzer\\ResumeAnalyzer\\Controllers\\ResumeController.cs",
+              "RelativeDocumentMoniker": "ResumeAnalyzer\\Controllers\\ResumeController.cs",
+              "ToolTip": "D:\\sem 5\\ResumeAnalyzer\\ResumeAnalyzer\\Controllers\\ResumeController.cs",
+              "RelativeToolTip": "ResumeAnalyzer\\Controllers\\ResumeController.cs",
+              "ViewState": "AgIAAIUAAAAAAAAAAAAcwJMAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-07T20:35:49.966Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "Site.css",
+              "DocumentMoniker": "D:\\sem 5\\ResumeAnalyzer\\ResumeAnalyzer\\Content\\Site.css",
+              "RelativeDocumentMoniker": "ResumeAnalyzer\\Content\\Site.css",
+              "ToolTip": "D:\\sem 5\\ResumeAnalyzer\\ResumeAnalyzer\\Content\\Site.css",
+              "RelativeToolTip": "ResumeAnalyzer\\Content\\Site.css",
+              "ViewState": "AgIAADECAAAAAAAAAAAwwEMCAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2026-01-07T09:10:58.919Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "AnalysisResultViewModel.cs",
+              "DocumentMoniker": "D:\\sem 5\\ResumeAnalyzer\\ResumeAnalyzer\\Models\\AnalysisResultViewModel.cs",
+              "RelativeDocumentMoniker": "ResumeAnalyzer\\Models\\AnalysisResultViewModel.cs",
+              "ToolTip": "D:\\sem 5\\ResumeAnalyzer\\ResumeAnalyzer\\Models\\AnalysisResultViewModel.cs",
+              "RelativeToolTip": "ResumeAnalyzer\\Models\\AnalysisResultViewModel.cs",
+              "ViewState": "AgIAABYAAAAAAAAAAAA+wDsAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-07T09:07:39.787Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "GeminiApiService.cs",
+              "DocumentMoniker": "D:\\sem 5\\ResumeAnalyzer\\ResumeAnalyzer\\Services\\GeminiApiService.cs",
+              "RelativeDocumentMoniker": "ResumeAnalyzer\\Services\\GeminiApiService.cs",
+              "ToolTip": "D:\\sem 5\\ResumeAnalyzer\\ResumeAnalyzer\\Services\\GeminiApiService.cs",
+              "RelativeToolTip": "ResumeAnalyzer\\Services\\GeminiApiService.cs",
+              "ViewState": "AgIAAFwBAAAAAAAAAAA2wGoBAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-07T08:31:19.552Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "GeminiModelHelper.cs",
+              "DocumentMoniker": "D:\\sem 5\\ResumeAnalyzer\\ResumeAnalyzer\\Services\\GeminiModelHelper.cs",
+              "RelativeDocumentMoniker": "ResumeAnalyzer\\Services\\GeminiModelHelper.cs",
+              "ToolTip": "D:\\sem 5\\ResumeAnalyzer\\ResumeAnalyzer\\Services\\GeminiModelHelper.cs",
+              "RelativeToolTip": "ResumeAnalyzer\\Services\\GeminiModelHelper.cs",
+              "ViewState": "AgIAACsAAAAAAAAAAAAewDcAAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-07T06:56:03.842Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "Web.config",
+              "DocumentMoniker": "D:\\sem 5\\ResumeAnalyzer\\ResumeAnalyzer\\Web.config",
+              "RelativeDocumentMoniker": "ResumeAnalyzer\\Web.config",
+              "ToolTip": "D:\\sem 5\\ResumeAnalyzer\\ResumeAnalyzer\\Web.config",
+              "RelativeToolTip": "ResumeAnalyzer\\Web.config",
+              "ViewState": "AgIAAEoAAAAAAAAAAAAgwFMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
+              "WhenOpened": "2026-01-07T06:50:00.628Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "ResumeAnalyzer",
+              "DocumentMoniker": "D:\\sem 5\\ResumeAnalyzer\\ResumeAnalyzer\\ResumeAnalyzer.csproj",
+              "RelativeDocumentMoniker": "ResumeAnalyzer\\ResumeAnalyzer.csproj",
+              "ToolTip": "D:\\sem 5\\ResumeAnalyzer\\ResumeAnalyzer\\ResumeAnalyzer.csproj",
+              "RelativeToolTip": "ResumeAnalyzer\\ResumeAnalyzer.csproj",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2026-01-07T06:32:30.734Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "SQLQuery1.sql",
+              "DocumentMoniker": "D:\\sem 5\\ResumeAnalyzer\\SQLQuery1.sql",
+              "RelativeDocumentMoniker": "SQLQuery1.sql",
+              "ToolTip": "D:\\sem 5\\ResumeAnalyzer\\SQLQuery1.sql",
+              "RelativeToolTip": "SQLQuery1.sql",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
+              "WhenOpened": "2026-01-07T04:14:14.473Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

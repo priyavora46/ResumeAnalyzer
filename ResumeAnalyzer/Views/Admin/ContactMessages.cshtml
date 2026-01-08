@@ -1,0 +1,116 @@
+﻿@model IEnumerable<ResumeAnalyzer.Models.ContactMessage>
+
+@{
+    ViewBag.Title = "Contact Messages";
+    var secretKey = Request.QueryString["key"];
+}
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <h2><span class="glyphicon glyphicon-envelope"></span> Contact Messages</h2>
+            <hr />
+        </div>
+    </div>
+
+    @if (TempData["Success"] != null)
+    {
+        <div class="alert alert-success alert-dismissible">
+            <button type="button" class="close" data-dismiss="alert">&times;</button>
+            <span class="glyphicon glyphicon-ok"></span> @TempData["Success"]
+        </div>
+    }
+
+    @if (TempData["Error"] != null)
+    {
+        <div class="alert alert-danger alert-dismissible">
+            <button type="button" class="close" data-dismiss="alert">&times;</button>
+            <span class="glyphicon glyphicon-exclamation-sign"></span> @TempData["Error"]
+        </div>
+    }
+
+    @if (Model != null && Model.Any())
+    {
+        <div class="panel panel-primary">
+            <div class="panel-heading">
+                <h3 class="panel-title">Total Messages: @Model.Count()</h3>
+            </div>
+            <div class="panel-body">
+                <div class="table-responsive">
+                    <table class="table table-striped table-hover">
+                        <thead>
+                            <tr>
+                                <th>#</th>
+                                <th>Date & Time</th>
+                                <th>Name</th>
+                                <th>Email</th>
+                                <th>Subject</th>
+                                <th>Message Preview</th>
+                                <th>Actions</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @foreach (var message in Model)
+                            {
+                                <tr>
+                                    <td>@message.Id</td>
+                                    <td>
+                                        <small>
+                                            @message.CreatedAt.ToString("MMM dd, yyyy")<br />
+                                            @message.CreatedAt.ToString("hh:mm tt")
+                                        </small>
+                                    </td>
+                                    <td><strong>@message.Name</strong></td>
+                                    <td>
+                                        <a href="mailto:@message.Email">@message.Email</a>
+                                    </td>
+                                    <td><span class="label label-info">@message.Subject</span></td>
+                                    <td>
+                                        @if (message.Message.Length > 50)
+                                        {
+                                            @message.Message.Substring(0, 50)<text>...</text>
+                                        }
+                                        else
+                                        {
+                                            @message.Message
+                                        }
+                                    </td>
+                                    <td>
+                                        @Html.ActionLink("View", "ViewMessage", new { id = message.Id, key = secretKey }, new { @class = "btn btn-sm btn-info" })
+
+                                        <form method="post" action="@Url.Action("DeleteMessage", new { id = message.Id, key = secretKey })" style="display:inline;">
+                                            @Html.AntiForgeryToken()
+                                            <button type="submit" class="btn btn-sm btn-danger" onclick="return confirm('Are you sure you want to delete this message?');">
+                                                <span class="glyphicon glyphicon-trash"></span> Delete
+                                            </button>
+                                        </form>
+                                    </td>
+                                </tr>
+                            }
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    }
+    else
+    {
+        <div class="alert alert-info">
+            <span class="glyphicon glyphicon-info-sign"></span> No contact messages yet.
+        </div>
+    }
+</div>
+
+<style>
+    .table-responsive {
+        margin-top: 20px;
+    }
+
+    .btn-sm {
+        margin-right: 5px;
+    }
+
+    .label {
+        font-size: 11px;
+    }
+</style>
